@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Veltrax Technologies – Private AI Platforms for Every Industry">
+  <title>Veltrax Technologies</title>
+  <style>
+    :root {
+      --bg-light: #ffffff;
+      --bg-dark: #121212;
+      --text-light: #1a1a1a;
+      --text-dark: #f5f5f5;
+      --accent: #5e2ced;
+    }
+    [data-theme="light"] {
+      --bg: var(--bg-light);
+      --text: var(--text-light);
+    }
+    [data-theme="dark"] {
+      --bg: var(--bg-dark);
+      --text: var(--text-dark);
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 2rem;
+      transition: background 0.3s, color 0.3s;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      color: var(--accent);
+      font-size: 2.75rem;
+      margin-bottom: 0.5rem;
+    }
+    nav {
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+    nav a {
+      margin: 0 1.2rem;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: bold;
+    }
+    section {
+      max-width: 880px;
+      margin: 0 auto 3rem;
+    }
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3rem;
+      color: var(--text);
+    }
+    ul {
+      padding-left: 1.25rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.25rem;
+      font-weight: bold;
+      color: #fff;
+      background: var(--accent);
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #491fb9;
+    }
+    .toggle-btn {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: #ccc;
+      color: #000;
+      padding: 0.4rem 0.75rem;
+      font-size: 0.9rem;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.875rem;
+      margin-top: 4rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+<button class="toggle-btn" onclick="toggleTheme()">🌗 Toggle Theme</button>
+
+<header>
+  <h1>Veltrax Technologies</h1>
+  <p>Private AI platforms for every industry — built for profit, precision, and privacy.</p>
+</header>
+
+<nav>
+  <a href="finex.html">Finex</a>
+  <a href="verdict.html">Verdict</a>
+  <a href="echelon.html">ÉCHELON</a>
+</nav>
+
+<section>
+  <h2>🧠 What We Build</h2>
+  <p>Veltrax builds modular, private AI platforms that run entirely on client infrastructure. No cloud. No subscriptions. Just results.</p>
+</section>
+
+<section>
+  <h2>🚀 Our Core Platforms</h2>
+  <ul>
+    <li><strong>💳 Finex</strong> – AI for Banking & Finance</li>
+    <li><strong>⚖️ Verdict</strong> – AI for Law Firms</li>
+    <li><strong>🛍️ ÉCHELON</strong> – AI for Retail & Customer Intelligence</li>
+  </ul>
+  <h3>Coming Soon</h3>
+  <ul>
+    <li>🏥 Healthcare</li>
+    <li>🚗 Automotive</li>
+    <li>⚡ Energy</li>
+    <li>📶 Telecommunications</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🔧 The Veltrax Standard</h2>
+  <ul>
+    <li>✅ Private by Default — No cloud APIs, ever</li>
+    <li>✅ Local AI Deployment — All models run on your servers</li>
+    <li>✅ Real-Time ROI Tracking — See every dollar saved or earned</li>
+    <li>✅ ROI-Driven Architecture — If it doesn't deliver value, we don't build it</li>
+    <li>✅ Clean Full-Stack Code — React + FastAPI + Postgres</li>
+    <li>✅ Modular + Scalable — Each platform is plug-and-play</li>
+    <li>✅ Obsessive Engineering Quality — We build for billion-dollar standards</li>
+  </ul>
+</section>
+
+<section>
+  <h2>📣 Get Involved</h2>
+  <a class="button" href="https://www.linkedin.com/company/veltrax-technologies" target="_blank">📬 Request a Private Demo</a>
+  <a class="button" href="https://www.linkedin.com/company/veltrax-technologies" target="_blank">📥 Join the Waitlist</a>
+</section>
+
+<footer>
+  <p>© Veltrax Technologies — Built for Profit. Designed for Privacy.</p>
+</footer>
+
+<script>
+  function toggleTheme() {
+    const html = document.documentElement;
+    html.dataset.theme = html.dataset.theme === "dark" ? "light" : "dark";
+  }
+</script>
+
+</body>
+</html>
